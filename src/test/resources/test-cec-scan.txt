@@ -1,0 +1,45 @@
+opening a connection to the CEC adapter...
+requesting CEC bus information ...
+CEC bus information
+===================
+device #1: Recorder 1
+address:       1.4.0.0
+active source: no
+vendor:        Pulse Eight
+osd string:    Plex
+CEC version:   1.4
+power status:  on
+language:      eng
+
+
+device #2: Recorder 2
+address:       1.3.0.0
+active source: no
+vendor:        Pulse Eight
+osd string:    CECTester
+CEC version:   1.4
+power status:  on
+language:      eng
+
+
+device #4: Playback 1
+address:       1.2.0.0
+active source: no
+vendor:        Sony
+osd string:    PlayStation 4
+CEC version:   1.3a
+power status:  standby
+language:      ???
+
+
+device #5: Audio
+address:       1.0.0.0
+active source: no
+vendor:        Yamaha
+osd string:    RX-V479
+CEC version:   1.4
+power status:  on
+language:      ???
+
+
+currently active source: unknown (-1)
