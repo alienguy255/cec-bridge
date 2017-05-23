@@ -34,4 +34,12 @@ public class CECServiceController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @RequestMapping(value = "/cec/{deviceId}/{command}/tv", method = RequestMethod.PUT)
+    public ResponseEntity<String> sendCECCommandForSamsungTv(@PathVariable(value = "deviceId") String deviceId, @PathVariable(value = "command") String command) {
+        // for some unknown reason my Samsung TV requires that 2 commands are issued in order to power on the TV
+        cecCommandExecutionHelper.sendCommand(deviceId, command);
+        cecCommandExecutionHelper.sendCommand(deviceId, command);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
 }
